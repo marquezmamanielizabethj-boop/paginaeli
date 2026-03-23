@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG/NOTICIAS - MI PEQUEÑO MUNDO</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+    <!-- ========== MENÚ PRINCIPAL (gradiente actualizado) ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(145deg, #FFB7C5, #FF8AAE);">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="img/LOGOTIPODETIENDA.jpg" alt="MI PEQUEÑO MUNDO" class="logo-img">
+                MI PEQUEÑO MUNDO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienes-somos.html">¿QUIENES SOMOS?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">SERVICIOS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">BLOG/NOTICIAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== BARRA SOCIAL FLOTANTE ========== -->
+    <div class="sidebar-social">
+        <a href="#" class="s-link rosa-1"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="s-link rosa-2"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="s-link rosa-3"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="s-link rosa-4"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <!-- ========== ENCABEZADO DEL BLOG ========== -->
+    <main class="container mt-5">
+        <div class="text-center">
+            <h1 class="titulo-rosa">BLOG / NOTICIAS</h1>
+            <p class="lead texto-rosa-medio">Consejos, tendencias y novedades para vestir a tus pequeños con estilo.</p>
+        </div>
+    </main>
+
+    <!-- ========== VIDEO + TEXTO (dos columnas) ========== -->
+    <section class="container mt-5">
+        <div class="row align-items-center g-4">
+            <!-- Columna del video -->
+            <div class="col-md-6">
+                <div class="video-wrapper">
+                    <video controls class="w-100 rounded-4 shadow-soft">
+                        <source src="video/eli2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <!-- Columna del texto -->
+            <div class="col-md-6">
+                <h3 class="titulo-rosa fw-bold mb-3">Inspiración y consejos</h3>
+                <p class="texto-rosa-medio fw-bold">En nuestro blog encontrarás contenido exclusivo sobre moda infantil, tendencias de temporada, cuidados para las prendas y mucho más. Suscríbete para no perderte ninguna novedad.</p>
+                <p class="texto-rosa-medio fw-bold">Pronto compartiremos tutoriales, entrevistas con expertos y las últimas colecciones de MI PEQUEÑO MUNDO.</p>
+                <a href="#suscripcion" class="btn btn-outline-primary mt-3">Suscríbete ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ARTÍCULOS DEL BLOG ========== -->
+    <section class="container mt-5">
+        <h2 class="text-center titulo-rosa mb-5">ULTIMAS NOTICIAS</h2>
+        <div class="row g-4">
+            <!-- Artículo 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/Diapositiva1.PNG" class="card-img-top" alt="Artículo 1" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-rosa">Tendencias de moda infantil 2026</h5>
+                        <p class="card-text texto-rosa-medio">Descubre los colores, telas y estilos que marcarán tendencia esta temporada para los más pequeños.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Leer más</a>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <small class="texto-rosa-medio">Publicado: 15 marzo 2026</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Artículo 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/vestido-enterizo-2-volantes-puntilla-de-julaina.jpg" class="card-img-top" alt="Artículo 2" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-rosa">Cómo elegir la talla correcta</h5>
+                        <p class="card-text texto-rosa-medio">Guía práctica para medir a tus hijos y comprar ropa online sin equivocarte.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Leer más</a>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <small class="texto-rosa-medio">Publicado: 5 marzo 2026</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Artículo 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/fondo_ultimo.jpg" class="card-img-top" alt="Artículo 3" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-rosa">Cuidados de las telas hipoalergénicas</h5>
+                        <p class="card-text texto-rosa-medio">Consejos para mantener la suavidad y durabilidad de las prendas para piel sensible.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Leer más</a>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <small class="texto-rosa-medio">Publicado: 20 febrero 2026</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECCIÓN DE SUSCRIPCIÓN ========== -->
+    <section id="suscripcion" class="container mt-5 mb-5">
+        <div class="bg-light p-4 rounded shadow-sm text-center">
+            <h3 class="titulo-rosa">Suscríbete a nuestro blog</h3>
+            <p class="texto-rosa-medio">Recibe las novedades y promociones directamente en tu correo.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="tu@email.com">
+                        <button class="btn btn-outline-primary" type="button">Suscribirme</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER (gradiente actualizado) ========== -->
+    <footer class="text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold d-flex align-items-center">
+                        <img src="img/LOGOTIPODETIENDA.jpg" alt="MI PEQUEÑO MUNDO" style="height: 40px; width: auto; margin-right: 10px; border-radius: 8px;">
+                        MI PEQUEÑO MUNDO
+                    </h4>
+                    <p>Ropa infantil con diseño y calidad. Desde 2025 vistiendo sueños.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li><a href="quienes-somos.html" class="text-white-50 text-decoration-none">¿Quiénes somos?</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Atención</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li><i class="bi bi-whatsapp me-2"></i>+591 71234567</li>
+                        <li><i class="bi bi-envelope me-2"></i>info@mimundo.bo</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>La Paz, Bolivia</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Boletín</h5>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="tu@email.com">
+                        <button class="btn btn-outline-light" type="button">Suscribir</button>
+                    </div>
+                    <small class="d-block mt-2 text-white-50">Recibe ofertas y novedades</small>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-white-50">
+                <i class="bi bi-c-circle me-1"></i> 2026 MI PEQUEÑO MUNDO · La Paz, Bolivia · Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
