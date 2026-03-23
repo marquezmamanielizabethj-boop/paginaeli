@@ -1,0 +1,267 @@
+/* ========== COLORES GLOBALES ========== */
+:root {
+    --menu-start: #FFB7C5;
+    --menu-end: #FF8AAE;
+    --titulo-rosa: #C75B7E;
+    --texto-rosa: #8B6B6F;
+    --rosa-claro: #FFFFFF;      /* fondo blanco */
+    --rosa-oscuro: #FFD1DC;
+}
+
+/* ========== ESTILOS GENERALES ========== */
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background: var(--rosa-claro);
+}
+
+/* ========== MENÚ ========== */
+.navbar-brand {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 rgba(78, 44, 170, 0.1);
+}
+.navbar {
+    border-bottom: 4px solid var(--rosa-oscuro);
+    box-shadow: 0 6px 15px rgba(255, 184, 197, 0.3);
+}
+.nav-link {
+    font-weight: 500;
+    margin: 0 5px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+.logo-img {
+    height: 45px;
+    width: auto;
+    margin-right: 12px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* TEXTO DEL MENÚ */
+.navbar-brand,
+.nav-link {
+    color: #ffe0e8 !important;
+}
+
+/* ========== HERO CON VIDEO DE FONDO (original, se sobrescribe con lo nuevo) ========== */
+/* Las siguientes reglas se mantienen para compatibilidad, pero las nuevas las anulan */
+.hero {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    color: #333;
+}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ========== ONDA BLANCA SOBRE EL VIDEO ========== */
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 205px;
+    overflow: hidden;
+    z-index: 4;
+}
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ========== SECCIONES COMUNES ========== */
+.seccion {
+    padding: 80px 0;
+    text-align: center;
+}
+.bg-light {
+    background-color: var(--rosa-claro) !important;
+}
+
+/* ========== SECCIÓN PRESENTACIÓN ========== */
+.presentacion {
+    background-color: #fff;
+}
+.presentacion-img {
+    transition: transform 0.3s ease;
+    max-height: 550px;
+    width: auto;
+    object-fit: cover;
+}
+.presentacion-img:hover {
+    transform: scale(1.02);
+}
+.presentacion-titulo {
+    color: var(--titulo-rosa);
+    font-size: 2rem;
+    font-weight: 800 !important;
+}
+.presentacion-texto {
+    color: var(--texto-rosa);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 700 !important;
+}
+.presentacion .btn-outline-primary {
+    border-color: var(--titulo-rosa);
+    color: var(--titulo-rosa);
+    border-width: 2px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.presentacion .btn-outline-primary:hover {
+    background: linear-gradient(145deg, var(--menu-start), var(--menu-end));
+    border-color: transparent;
+    color: white;
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px #f8f4f4;
+}
+
+/* ========== TÍTULOS Y TEXTOS GENERALES ========== */
+h1, h2, h3, h4, h5, h6, .lead, .navbar-brand, .nav-link, .descripcion-producto h5 {
+    color: var(--titulo-rosa) !important;
+}
+p, .descripcion-producto p, .presentacion-texto, .seccion p:not(.fw-black) {
+    color: var(--texto-rosa) !important;
+}
+.hero h1, .hero p {
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* ========== BOTONES ========== */
+.btn-primary {
+    background-color: var(--titulo-rosa);
+    border-color: var(--titulo-rosa);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #a55170;
+    border-color: #a55170;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: linear-gradient(145deg, var(--menu-start), var(--menu-end));
+    border-top: 6px solid var(--rosa-oscuro);
+    box-shadow: 0 -10px 25px rgba(0,0,0,0.2);
+}
+footer a {
+    transition: all 0.2s;
+}
+footer a:hover {
+    color: var(--rosa-oscuro) !important;
+    transform: translateX(5px);
+}
+footer, footer h5, footer p, footer a, footer small {
+    color: white !important;
+}
+.input-group {
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.form-control {
+    border: none;
+    background: #f0f0f0;
+}
+.btn-outline-light:hover {
+    background: #b14f5e;
+    color: #e940db;
+    border-color: var(--rosa-oscuro);
+}
+hr {
+    opacity: 0.3;
+}
+
+/* ========== HERO CON DOS VIDEOS (NUEVAS REGLAS) ========== */
+.hero {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+.hero-videos-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.video-item {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative; /* sobrescribe la posición absoluta anterior */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+}
+.hero-content a {
+    pointer-events: auto;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 205px;
+    overflow: hidden;
+    z-index: 3;
+    pointer-events: none;
+}
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive: en móviles los videos se apilan verticalmente */
+@media (max-width: 768px) {
+    .hero-videos-container {
+        flex-direction: column;
+    }
+    .video-item {
+        height: 50%;
+    }
+}
